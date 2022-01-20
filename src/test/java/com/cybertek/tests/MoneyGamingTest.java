@@ -10,7 +10,7 @@ public class MoneyGamingTest extends TestBase{
 
     RegistrationPage registrationPage = new RegistrationPage();
 
-    @Test
+    @Test // important -> Dont forget to change url on TestBase .....
     public void moneyGamingTest(){
 
         registrationPage.joinNowButton.click();

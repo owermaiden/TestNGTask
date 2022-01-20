@@ -15,7 +15,7 @@ public class AmazonTest extends TestBase {
     AmazonCartPage amazonCartPage = new AmazonCartPage();
     ShoppingCartPage shoppingCartPage = new ShoppingCartPage();
 
-    @Test
+    @Test  // important -> Dont forget to change url on TestBase .....
     public void searchForHat(){
 
         amazonMainPage.searchBoxInput.sendKeys(ConfigurationReader.get("searchItem"));
