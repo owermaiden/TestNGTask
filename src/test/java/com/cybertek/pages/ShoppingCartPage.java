@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ShoppingCartPage extends BasePage{
 
-    @FindBy(xpath = "//span[@data-action='a-dropdown-button']")
+    @FindBy(xpath = "//span[.='Qty:']/..")
     public WebElement quantitySelectButton;
 
     @FindBy(css = "#sc-subtotal-amount-activecart>span")

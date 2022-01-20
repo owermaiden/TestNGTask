@@ -7,7 +7,7 @@ import java.util.List;
 
 public class AmazonCartPage extends BasePage{
 
-    @FindBy(xpath= "(//span[@data-action='a-dropdown-button'])[1]")
+    @FindBy(xpath= "//span[.='Qty:']/..")
     public WebElement quantitySelectButton;
 
     @FindBy(css = ".a-dropdown-item")

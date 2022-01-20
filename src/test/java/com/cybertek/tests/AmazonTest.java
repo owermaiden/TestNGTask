@@ -22,6 +22,7 @@ public class AmazonTest extends TestBase {
         amazonMainPage.firstSearchResultforHat.click();
 
         BrowserUtils.waitForPageToLoad(3);
+        BrowserUtils.verifyElementDisplayed(amazonCartPage.quantitySelectButton);
         amazonCartPage.quantitySelectButton.click();
         amazonCartPage.dropdownItems.get(1).click();
         amazonCartPage.addToCartButton.click();
@@ -32,6 +33,7 @@ public class AmazonTest extends TestBase {
         String initialPrice = shoppingCartPage.totalPrice.getText();
         System.out.println(initialPrice);
 
+        BrowserUtils.verifyElementDisplayed(shoppingCartPage.quantitySelectButton);
         shoppingCartPage.quantitySelectButton.click();
         shoppingCartPage.dropdownQuantityItems.get(1).click();
 
@@ -40,13 +42,6 @@ public class AmazonTest extends TestBase {
         System.out.println(newPrice);
 
         Assert.assertNotEquals(newPrice, initialPrice);
-
-
-
-
-
-
-
 
     }
 }
