@@ -1,4 +1,4 @@
-package com.cybertek.pages;
+package com.cybertek.amazonPages;
 
 import com.cybertek.utilities.Driver;
 import org.openqa.selenium.WebElement;

@@ -59,13 +59,13 @@ public class TestBase {
 
         System.out.println("env== " + env);
         if (env==null){
-            url =ConfigurationReader.get("url");
+            url =ConfigurationReader.get("url1");
         }else{
-            url = ConfigurationReader.get(env+"_url");
+            url = ConfigurationReader.get(env+"_url1");
         }
         driver = Driver.get();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         actions = new Actions(driver);
         wait = new WebDriverWait(driver,10);
         driver.get(url);

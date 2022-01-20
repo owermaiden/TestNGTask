@@ -1,8 +1,8 @@
 package com.cybertek.tests;
 
-import com.cybertek.pages.AmazonCartPage;
-import com.cybertek.pages.AmazonMainPage;
-import com.cybertek.pages.ShoppingCartPage;
+import com.cybertek.amazonPages.AmazonCartPage;
+import com.cybertek.amazonPages.AmazonMainPage;
+import com.cybertek.amazonPages.ShoppingCartPage;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.ConfigurationReader;
 import org.openqa.selenium.support.ui.Select;
