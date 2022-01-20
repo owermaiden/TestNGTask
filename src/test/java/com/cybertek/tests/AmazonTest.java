@@ -25,7 +25,7 @@ public class AmazonTest extends TestBase {
         BrowserUtils.waitForPageToLoad(3);
         BrowserUtils.verifyElementDisplayed(amazonCartPage.quantitySelectButton);
         //amazonCartPage.quantitySelectButton.click();
-        Select quantitySelect = new Select(amazonCartPage.quantitySelectButton);  // Usage of select dropdown..
+        Select quantitySelect = new Select(amazonCartPage.quantitySelectButton);  // Usage of select dropdown..I couldnt add this to PAge
         quantitySelect.selectByIndex(1);
         amazonCartPage.addToCartButton.click();
 
